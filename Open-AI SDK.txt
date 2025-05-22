@@ -1,0 +1,59 @@
+What is OpenAI SDK?
+The OpenAI SDK (Software Development Kit) is a set of tools and libraries provided by OpenAI that allows developers to:
+
+1. Access OpenAI models: Integrate OpenAI's AI models, such as language models (e.g., GPT-3, GPT-4), into their applications.
+
+2. Build AI-powered applications: Create applications that leverage OpenAI's AI capabilities, such as text generation, summarization, and conversation.
+
+The OpenAI SDK provides a convenient interface for developers to interact with OpenAI's models, making it easier to build AI-powered applications.
+
+Key Features
+1. API access: Programmatic access to OpenAI models.
+2.  Language support: Support for multiple programming languages etc.
+
+By using the OpenAI SDK, developers can unlock the potential of AI in their applications and create innovative solutions.
+
+1. Why is the Agent class defined as a dataclass?
+
+A dataclass in Python is a simple way to create classes that mainly contain data. The Agent class is defined as a dataclass likely because it:
+
+- Simplifies the definition of the class
+- Automatically generates special methods like `__init__` and `__repr__`
+- Improves code readability
+
+2a. Why is the system prompt contained in the Agent class as instructions?
+
+The system prompt is contained in the Agent class as instructions because it:
+
+- Defines the agent's behavior and goals
+- Provides context for the agent's actions
+- Can be set as callable to allow for dynamic generation of instructions
+
+2b. Why is the user prompt passed as a parameter in the run method of Runner?
+
+The user prompt is passed as a parameter in the run method of Runner because it:
+
+- Allows for dynamic input from the user
+- Enables the agent to respond to specific user queries
+- Separates the user input from the agent's internal instructions
+
+3. What is the purpose of the Runner class?
+
+The Runner class likely serves as a:
+
+- Coordinator between the agent and the environment
+- Executor of the agent's actions
+- Handler of user input and agent responses
+
+4. What are generics in Python? Why use it for TContext?
+
+Generics in Python (type hints) allow for:
+
+- Specifying types for function parameters and return types
+- Improving code readability and maintainability
+- Enabling static type checking
+
+TContext is likely a generic type used to specify the context in which the agent operates. Using generics for TContext allows for:
+
+- Flexibility in defining the context type
+- Better code completion and type checking
